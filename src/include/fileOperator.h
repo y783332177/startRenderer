@@ -14,25 +14,6 @@
 // 	int v[3];
 // };
 
-// class float3
-// {
-// public:
-// 	float x;
-// 	float y;
-// 	float z;
-// public:
-// 	float3();
-// 	float3(float mx, float my, float mz);
-// 	~float3();
-// 	float3 operator+(float3);
-// 	float3 operator-(float3);
-// 	float3 operator/(float);
-// 	friend float3 operator*(float m, float3 f3);
-// 	friend float3 operator*(float3 f3, float m);
-// 	float3 operator=(float3);
-// 	float3& operator += (float3);
-// };
-
 struct TriangleMesh
 {
 	std::vector<Eigen::Vector3f> verts;
@@ -44,19 +25,13 @@ struct TriangleMesh
 	float bouding_sphere_r;
 };
 
-class readFileBase
+
+class ReadFileBase
 {
-public:
-	TriangleMesh mesh;
-	int total_number_of_triangles = 0;
-	// Scene bounding box;
-	Eigen::Vector3f scene_aabbox_min;
-	Eigen::Vector3f scene_aabbox_max;
-	void loadObjBase(const std::string filename, TriangleMesh &mesh);
-	void calculateAABB();
+    
 };
 
-class writeFileBase
+class WriteFileBase
 {
 
 };

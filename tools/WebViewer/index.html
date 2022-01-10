@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<script src="/tgaimage.min.js"></script>
+<script>
+    // You can load a TGA image with imageWithURL function.
+    const tga1 = TGAImage.imageWithURL('/main.tga')
+    // didLoad is Promise.
+    tga1.didLoad.then(() => {
+    document.getElementById('colorImgTag').appendChild(tga1.image)
+    })
+
+</script>
+<body>
+<h2>Image</h2><br/>
+<div id="colorImgTag"></div><br/>
+
+</body>
+</html>

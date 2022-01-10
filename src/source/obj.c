@@ -10,55 +10,7 @@
 #include<Eigen/Dense>
 using namespace std;
 
-
-// float3::float3() { x=0;y=0;z=0; }
-// float3::float3(float mx, float my, float mz):x(mx),y(my),z(mz) {}
-// float3::~float3() {}
-// float3 float3::operator + (float3 m)
-// {
-// 	float3 temp;
-// 	temp.x = x + m.x;
-// 	temp.y = y + m.y;
-// 	temp.z = z + m.z;
-// 	return temp;
-// }
-
-// float3 float3::operator - (float3 m)
-// {
-// 	float3 temp;
-// 	temp.x = x - m.x;
-// 	temp.y = y - m.y;
-// 	temp.z = z - m.z;
-// 	return temp;
-// }
-// float3 float3::operator / (float m)
-// {
-// 	if(m == 0)
-// 	{
-// 		printf("error :");
-// 		return float3(x,y,z);
-// 	}
-// 	else
-// 	{
-// 		return float3(x/m,y/m,z/m);
-// 	}
-// }
-
-// float3 operator * (float m, float3 f3) {
-// 	return float3(f3.x*m, f3.y*m, f3.z*m);
-
-// } 
-// float3 operator * (float3 f3, float m) {
-// 	return float3(f3.x*m, f3.y*m, f3.z*m);
-// }
-// float3 float3::operator = (float3 m)
-// {
-// 	x = m.x;
-// 	y = m.y;
-// 	z = m.z;
-// }
-
-void readFileBase::loadObjBase(const std::string filename, TriangleMesh &mesh)
+void ObjReader::loadObjBase(const std::string filename, TriangleMesh &mesh)
 {
 	std::ifstream in(filename.c_str());
 	if(!in.good())
@@ -109,7 +61,7 @@ void readFileBase::loadObjBase(const std::string filename, TriangleMesh &mesh)
 	}
 }
 
-void readFileBase::calculateAABB()
+void ObjReader::calculateAABB()
 {
 	mesh.bounding_box[0] = mesh.verts[0];
 	mesh.bounding_box[1] = mesh.verts[1];
