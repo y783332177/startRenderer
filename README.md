@@ -11,4 +11,4 @@ The source code
     - webViewer.sh  
     ``$ bash make.sh``  
     it will run webViwer and open the port 80, u can see the tga image through the web.
-NOTE: u may need the env ``nodejs``, download it through yum or apt-get before u run webViewer~
+NOTE: u may need the env ``nodejs``, download it through yum or apt-get before u run webViewer!  
