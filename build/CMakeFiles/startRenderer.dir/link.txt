@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/startRenderer.dir/src/source/fileOperator.cpp.o CMakeFiles/startRenderer.dir/src/source/main.cpp.o -o startRenderer 

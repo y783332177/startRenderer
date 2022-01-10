@@ -1,3 +1,0 @@
-/root/personal/startRenderer/build/CMakeFiles/rebuild_cache.dir
-/root/personal/startRenderer/build/CMakeFiles/edit_cache.dir
-/root/personal/startRenderer/build/CMakeFiles/startRenderer.dir
